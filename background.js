@@ -14,7 +14,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if(message.form==='signup'){
         $.ajax({
             type: "POST",
-            url: "http://localhost:3000/user/signup.html",
+            url: "http://localhost:3000/user/signup",
             data: { username: message.username, email: message.email, password: message.password },
             success: function(response){
                alert(response.message);
@@ -52,7 +52,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     }else{
         $.ajax({
             type: "POST",
-            url: "http://localhost:3000/user/login.html",
+            url: "http://localhost:3000/user/login",
             data: { email: message.email, password: message.password },
             success: function(response){
                chrome.storage.local.set({
