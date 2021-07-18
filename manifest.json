@@ -1,0 +1,19 @@
+{
+    "name": "Amazon Price Tracker and Scraper",
+    "description": "Scrapes amazon search result, purchase history and tracks price changes",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": [
+      "declarativeContent",
+      "storage"
+    ],
+    "background": {
+       "scripts": ["jquery-3.6.0.min.js", "background.js"]
+      },
+    "browser_action": {
+        "default_popup": "popup.html"
+      },
+      "content_security_policy": "script-src 'self' https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.29/angular-ui-router.min.js; object-src 'self';style-src 'self' 'unsafe-inline'"
+
+   
+}

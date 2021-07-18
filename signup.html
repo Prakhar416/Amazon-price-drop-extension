@@ -1,0 +1,17 @@
+<body>
+    <div ng-controller="SignupController">
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" name="uname" id="uname" ng-model="username"><br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" ng-model="email"><br>
+            <label for="password">password:</label>
+            <input type="password" name="password" id="password" ng-model="password"><br>
+            <!-- <input type="submit" value="Sign Up" ng-click="signup()"> -->
+            <button type="button" ng-click="submit()">Sign up</button>
+        </form>
+        <div ui-sref-active="active">
+            <a href="/login.html">Login</a>
+        </div>
+    </div>
+</body>

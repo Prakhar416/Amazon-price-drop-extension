@@ -1,0 +1,26 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "config-js": "^1.1.15",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "experss": "0.0.1-security",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.0",
+    "jquery": "^3.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.0.0",
+    "mongoose": "^5.13.3",
+    "morgan": "^1.10.0"
+  }
+}
